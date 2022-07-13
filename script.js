@@ -9,7 +9,7 @@ app.use(express.json());
 const mongoclient=mongodb.MongoClient;
 const URL="mongodb+srv://ramrk:blog123@cluster0.b0drx.mongodb.net/?retryWrites=true&w=majority";
 
-app.post("/yourblog",async (req,res) => {
+app.post("/createblog",async (req,res) => {
    try {
     let connection=await mongoclient.connect(URL);
     let db=connection.db("blogersjunction");
