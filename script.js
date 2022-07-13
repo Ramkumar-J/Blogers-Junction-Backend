@@ -3,7 +3,7 @@ const cors=require("cors");
 const mongodb=require("mongodb");
 const app=express();
 app.use(cors({
-    origin:"https://resilient-mooncake-8315b2.netlify.app/",
+    origin:"https://resilient-mooncake-8315b2.netlify.app/"
 }))
 app.use(express.json());
 const mongoclient=mongodb.MongoClient;
