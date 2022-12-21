@@ -1,6 +1,6 @@
 const express=require("express");
-require('dotenv').config();
-console.log(process.env);
+const dotenv=require("dotenv");
+dotenv.config();
 const cors=require("cors");
 const mongodb=require("mongodb");
 const app=express();
@@ -47,6 +47,8 @@ app.get("/blogs/:id",async (req,res) => {
     }
 })
 
-app.listen(process.env.PORT || 3001, () => {
-    console.log("Web server on");
+const port=process.env.PORT || 8080;
+
+app.listen(port, () => {
+    console.log(`Web server on at ${port}`);
 });
