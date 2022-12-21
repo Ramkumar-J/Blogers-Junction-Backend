@@ -1,6 +1,4 @@
 const express=require("express");
-const dotenv=require("dotenv");
-dotenv.config();
 const cors=require("cors");
 const mongodb=require("mongodb");
 const app=express();
