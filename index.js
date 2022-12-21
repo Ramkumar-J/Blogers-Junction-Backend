@@ -1,4 +1,6 @@
 const express=require("express");
+require('dotenv').config();
+console.log(process.env);
 const cors=require("cors");
 const mongodb=require("mongodb");
 const app=express();
