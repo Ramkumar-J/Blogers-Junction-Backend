@@ -5,7 +5,7 @@ const app=express();
 app.use(cors({
     origin: [
         "http://localhost:3000",
-        "https://resilient-mooncake-8315b2.netlify.app",
+        "https://dapper-otter-9d489b.netlify.app",
       ],
 }))
 app.use(express.json());
